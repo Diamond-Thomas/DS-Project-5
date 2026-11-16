@@ -1,0 +1,3 @@
+### Why is it critical that we override the equals method in the Artifact class rather than relying on default Java reference equality (==)? In an unordered collection, how does the “swap with last” removal technique achieve better practical performance than shifting all remaining elements to the left?
+
+We don't rely on the default Java reference equality because when it tests if something is equal when testing objects it verifies if it is located in the same place not if the value itself is the same. The “swap with last” removal technique achieves better practical performance than shifting all remaining elements to the left because it takes lakes less processing power to swap one time and be done then it takes to move every element over.
